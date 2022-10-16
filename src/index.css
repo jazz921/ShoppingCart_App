@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.App {
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+
+.cart {
+  background: rgb(242, 242, 242);
+  padding: 10px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.item-box {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 3px;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.items > div {
+  display: flex;
+  align-items: center;
+}
+.items > div > button {
+  width: 25px;
+  height: 25px;
+}
+.items > img {
+  width: 50px;
+  height: 50px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.products-container > div {
+  width: 225px;
+  height: 225px;
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products-container > div > img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.products-container > div > div > p {
+  font-size: .8em;
+}
+.btn2cart {
+  background: rgb(112, 255, 112);
+  border: none;
+  cursor: pointer;
+  padding: 5px 0px;
+  font-weight: bold;
+  transition: .3s ease-in-out
+}
+.btn2cart:hover {
+  background: rgb(90, 214, 90)
+}
+.btn-rmv {
+  background-color: rgb(251, 149, 149);
+  border: none;
+  cursor: pointer;
+  padding: 5px 0px;
+  transition: .3s ease-in-out
+}
+.btn-rmv:hover {
+  background-color: rgb(244, 108, 108);
+}
+.pg-btn {
+  font-size: 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin: 10px 5px;
+  padding: 5px;
+  margin-right: 20px;
+}
